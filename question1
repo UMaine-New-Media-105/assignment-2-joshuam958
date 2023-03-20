@@ -1,0 +1,28 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  stroke("white");
+  fill("lime");
+  row(0, "lime", "cyan", "cyan", "cyan", "lime");
+  row(80, "lime", "lime", "cyan", "lime", "lime");
+  row(160, "lime", "lime", "cyan", "lime", "lime");
+  row(240, "cyan", "lime", "cyan", "lime", "lime");
+  row(320, "lime", "cyan", "cyan", "lime", "lime");
+}
+
+//row function
+function row(y, color1, color2, color3, color4, color5) {
+  fill(color1);
+  rect(0, y, 80);
+  fill(color2);
+  rect(80, y, 80);
+  fill(color3);
+  rect(160, y, 80);
+  fill(color4);
+  rect(240, y, 80);
+  fill(color5);
+  rect(320, y, 80);
+}
