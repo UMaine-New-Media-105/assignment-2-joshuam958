@@ -1,0 +1,18 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  fill("yellow")
+  strokeWeight(3)
+  beginShape();
+  vertex(220,100)
+  vertex(160,220)
+  vertex(185,200)
+  vertex(160,300)
+  vertex(220,180)
+  vertex(195,200)
+  vertex(220,100)
+  endShape();
+}
