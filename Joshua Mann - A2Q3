@@ -1,0 +1,26 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  lightningbolt(0.8, 100, 100);
+}
+
+function lightningbolt(size, x, y) {
+  push();
+  fill("yellow");
+  translate(x, y);
+  scale(size);
+  strokeWeight(3);
+  beginShape();
+  vertex(220, 100);
+  vertex(160, 220);
+  vertex(185, 200);
+  vertex(160, 300);
+  vertex(220, 180);
+  vertex(195, 200);
+  vertex(220, 100);
+  endShape();
+  pop();
+}
