@@ -1,0 +1,42 @@
+function setup() {
+  createCanvas(600, 400);
+  angleMode(DEGREES)
+}
+
+function draw() {
+  background(220);
+  //Myanmar Flag stripes
+  noStroke()
+  fill(255,0,0)
+  rect(0,266,600,134)
+  fill("lime")
+  rect(0,133,600,133)
+  fill("yellow")
+  rect(0,0,600,133)
+  //Jamaican Flag triangles and stripes
+  fill(0,180,0)
+  triangle(0,0,600,0,300,200)
+  triangle(0,400,600,400,300,200)
+  stroke(240,220,0)
+  strokeWeight(40)
+  line(0,0,600,400)
+  line(0,400,600,0)
+  //add the Myanmar flag star
+  addStar()
+}
+  //Function for Myanmar Flag star
+function addStar(){
+  noStroke()
+  fill(255)
+  translate(300,200)
+  rotate(180)
+  triangle(0,100,50,0,-50,0)
+  rotate(72)
+  triangle(0,100,50,0,-50,0)
+  rotate(72)
+  triangle(0,100,50,0,-50,0)
+  rotate(72)
+  triangle(0,100,50,0,-50,0)
+  rotate(72)
+  triangle(0,100,50,0,-50,0)
+}
